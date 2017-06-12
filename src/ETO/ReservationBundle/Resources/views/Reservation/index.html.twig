@@ -1,0 +1,28 @@
+{# src/ETO/ReservationBundle/Resources/views/Reservation/index.html.twig #}
+
+
+{% extends "ETOReservationBundle::layout.html.twig" %}
+
+{% block body %}
+
+    <div class="col-md-12">
+        <div class="col-md-offset-0 col-md-2">
+            <img class="tailleImg" src="../images/Entree-Louvre.jpg">
+        </div>
+        <div class="col-md-offset-0 col-md-8">
+            <h3>Achat de billet(s)</h3>
+            <p>Vous souhaitez vous rendre au musée du Louvre de Paris.</p>
+            <p>
+                Vous pouvez dès à présent effectuer votre réservation directement en ligne.<br>
+                Rien de plus facile. Il vous suffit juste de cliquer sur le bouton ci dessous pour vous rendre dans la billeterie.
+                Et ainsi pouvoir commander vos billets.
+            </p>
+            <a href="{{ path('eto_reservation_billeterie') }}">
+                <button type="button" class="btn btn-primary col-md-2 col-md-offset-10">Commander</button>
+            </a>
+        </div>
+        <div class="col-md-offset-0 col-md-2">
+            <img class="tailleImg" src="../images/Entree-Louvre.jpg">
+        </div>
+    </div>
+{% endblock %}

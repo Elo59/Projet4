@@ -1,0 +1,20 @@
+{# src/ETO/ReservationBundle/Resources/views/Reservation/paiement.html.twig #}
+
+{% extends "ETOReservationBundle::layout.html.twig" %}
+
+{% block body %}
+
+    <div class="col-md-12">
+        <h2>Validation</h2>
+
+        <div>
+            Votre commande a été enregistrée
+        </div>
+
+        Commander à nouveau ?
+        <a href="{{ path('eto_reservation_billeterie') }}">
+            <button type="button" class="btn btn-primary col-md-offset-10">Billeterie</button>
+        </a>
+
+    </div>
+{% endblock %}

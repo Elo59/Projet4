@@ -1,0 +1,48 @@
+{# src/ETO/ReservationBundle/Resources/views/layout.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Reservation Louvre{% endblock %}</title>
+
+    {% block stylesheets %}
+        {# On charge le CSS de bootstrap depuis le site directement #}
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../monStyle.css">
+    {% endblock %}
+</head>
+
+<body>
+<div class="container">
+    <a href="{{ path('eto_reservation_home') }}">
+        <div id="header" class="page-header col-md-12">
+            <div class="col-md-offset-0 col-md-6">
+                <h1>Site de reservation du musée du Louvre</h1>
+            </div>
+            <div class="col-md-offset-7">
+                <img src="../images/Louvre-logo.jpg">
+            </div>
+            <h5>
+                Bienvenue sur le tout nouveau site de réservation et de vente en ligne de billet pour le musée du Louvre.
+            </h5>
+        </div>
+    </a>
+
+    <div class="row">
+        <div id="content" class="col-md-12">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        <p>Le musée du Louvre est ouvert tous les jours exepté le mardi.<br>
+        Il sera également fermé le 1er mai, le 1er novembre et le 25 décembre.</p>
+    </footer>
+</div>
+
+</body>
+</html>

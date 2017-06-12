@@ -1,0 +1,19 @@
+eto_reservation_home:
+    path:     /reservation
+    defaults: { _controller: ETOReservationBundle:Reservation:index }
+
+eto_reservation_billeterie:
+    path:     /billeterie
+    defaults: { _controller: ETOReservationBundle:Reservation:billeterie }
+
+eto_reservation_billets:
+    path:     /billets
+    defaults: { _controller: ETOReservationBundle:Reservation:billets }
+
+eto_reservation_paiement:
+    path:     /paiement
+    defaults: { _controller: ETOReservationBundle:Reservation:paiement }
+
+eto_reservation_validation:
+    path:     /validation
+    defaults: { _controller: ETOReservationBundle:Reservation:validation }

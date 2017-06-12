@@ -1,0 +1,7 @@
+eto_reservation:
+    resource: "@ETOReservationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

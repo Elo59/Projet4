@@ -1,0 +1,45 @@
+{# src/ETO/ReservationBundle/Resources/views/Reservation/billeterie.html.twig #}
+
+{% extends "ETOReservationBundle::layout.html.twig" %}
+
+{% block body %}
+
+    <div class="col-md-12">
+        <h2>Billeterie</h2>
+        <h3>Quels type de billets souhaitez vous commander ? </h3>
+        Billet journée <br>
+        Billet demi-journée<br>
+        <i class="infos">Attention, ce billet ne permet de rentrer qu'a partir de 14h00.</i><br><br>
+
+        <p>
+            Merci de bien vouloir choisir le nombre de billets que vous souhaitez commander
+        </p>
+
+        <a href="{{ path('eto_reservation_billets') }}">
+            <button type="button" class="btn btn-primary col-md-offset-10">Valider</button>
+        </a>
+
+        <hr>
+        <div class="col-md-12">
+            <h2>Informations acheteur</h2>
+
+            <div>
+                prochainement le formulaire pour les informations de l'acheteur
+            </div>
+            <a href="{{ path('eto_reservation_billeterie') }}">
+                <button type="button" class="btn btn-primary col-md-offset-10">Valider</button>
+            </a>
+
+        </div>
+        <hr>
+
+        <h3> Les tarifs du musée</h3>
+        <ul>
+            <li>Gratuit pour les enfants de moins de 4ans</li>
+            <li>Le tarif enfant à partir de 4ans à 8€ le billet</li>
+            <li>Le tarif normal à partir de 12ans à 16€ le billet</li>
+            <li>Le tarif sénior à partir de 60ans à 12€ le billet</li>
+            <li>Le tarif réduit à 10€ le billet (étudiant, employé du musée, d’un service du Ministère de la Culture, militaire...)</li>
+        </ul>
+    </div>
+{% endblock %}

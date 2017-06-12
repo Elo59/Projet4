@@ -1,0 +1,18 @@
+{# src/ETO/ReservationBundle/Resources/views/Reservation/paiement.html.twig #}
+
+{% extends "ETOReservationBundle::layout.html.twig" %}
+
+{% block body %}
+
+    <div class="col-md-12">
+        <h2>Paiement</h2>
+
+        <div>
+            prochainement le formulaire de paiement
+        </div>
+        <a href="{{ path('eto_reservation_validation') }}">
+            <button type="button" class="btn btn-primary col-md-offset-10">Payer</button>
+        </a>
+
+    </div>
+{% endblock %}
